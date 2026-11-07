@@ -31,3 +31,25 @@ footer {
   border-top: 1px solid #000;
   text-align: center;
 }
+nav {
+  background-color: #023047;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+h1 {
+  color: #023047;
+}
+
+main img {
+  width: 200px;
+  height: auto;
+  border: 1px solid #023047;
+  padding: 2px;
+  box-shadow: 0 0 30px #333;
+}
