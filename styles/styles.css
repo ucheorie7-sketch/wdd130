@@ -76,5 +76,8 @@ main img {
 aside h2 {
   position: absolute;
   top: 45px;
-  left: 65px;
+  left: 30px;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 1px 1px 3px black;
 }
