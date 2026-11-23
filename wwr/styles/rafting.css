@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #0A4D68;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
 /* Header - CSS GRID */
 header {
     display: grid;
