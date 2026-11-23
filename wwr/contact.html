@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <img src="images/logo.jpg" alt="White Water Rafting Logo">
+        <img src="images/logo.png" alt="White Water Rafting Logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -42,15 +42,15 @@
 
                 <fieldset>
                     <legend>Message Purpose</legend>
-                    <label><input type="radio" name="purpose" value="general" checked> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <label for="general"><input type="radio" id="general" name="purpose" value="general" checked> General Inquiry</label>
+                    <label for="reservation"><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
+                    <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
                 </fieldset>
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" placeholder="Type here"></textarea>
 
-                <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+                <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter</label>
 
                 <button type="submit">Get in Touch!</button>
             </form>
