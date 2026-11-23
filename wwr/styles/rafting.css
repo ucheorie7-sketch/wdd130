@@ -1,7 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #0A4D68;
     --heading-font: Arial, Helvetica, sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
 }
 
 /* Header - CSS GRID */
@@ -9,7 +24,7 @@ header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    background-color: #0a4a6b;
+    background-color: var(--primary-color);
     padding: 10px 20px;
 }
 
@@ -133,17 +148,17 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0a4a6b;
+    background-color: var(--primary-color);
     color: white;
     padding: 15px 20px;
 }
 
-footer .sociallinks {
+footer .socialmedia {
     display: flex;
     gap: 10px;
 }
 
-footer .sociallinks img {
+footer .socialmedia img {
     width: 35px;
     height: 35px;
 }
