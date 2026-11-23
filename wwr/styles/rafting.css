@@ -1,48 +1,39 @@
-:root {
-    --primary-color: #0A4D68;
-    --secondary-color: #088F8F;
-    --accent1-color: #F5A623;
-    --accent2-color: #FFFFFF;
-    --heading-font: Arial, Helvetica, sans-serif;
-    --body-font: Arial, Helvetica, sans-serif;
+/* Header - CSS GRID */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: #0a4a6b;
+    padding: 10px 20px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header img {
+    width: 120px;
+    height: auto;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--primary-color);
+/* Nav - CSS FLEX */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.socialmedia a {
+nav a {
+    color: white;
     text-decoration: none;
+    background-color: #1a7a9e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
+nav a:hover {
+    background-color: #f2a541;
+    color: #000;
+}
+
+/* Hero */
 .hero {
     position: relative;
 }
@@ -57,30 +48,96 @@ article {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 0;
 }
 
 .hero article {
     position: absolute;
     bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    left: 50px;
+    right: 50px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .hero article img {
+    width: 150px;
     float: right;
-    width: 125px;
 }
 
-.socialmedia img {
-    width: 30px;
+/* History - GRID with 3 columns */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.history img {
+    width: 100%;
     height: auto;
 }
 
-header img {
-    width: 100px;
-    height: auto;
+/* Adventures - FLEX with 5 images */
+.adventures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+
+.adventures h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.adventures figure {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+}
+
+.adventures img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.adventures figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Footer - FLEX */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a4a6b;
+    color: white;
+    padding: 15px 20px;
+}
+
+footer .sociallinks {
+    display: flex;
+    gap: 10px;
+}
+
+footer .sociallinks img {
+    width: 35px;
+    height: 35px;
 }
